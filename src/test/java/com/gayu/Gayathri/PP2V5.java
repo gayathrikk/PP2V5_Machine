@@ -150,14 +150,14 @@ public class PP2V5 {
 		                message.addRecipient(Message.RecipientType.BCC, new InternetAddress(bccRecipient));
 		            }
 		            // Set Subject: header field
-		            message.setSubject("PP3V5.humanbrain.in - STORAGE ALERT ⚠️ ");
-		            // Set the actual message
-		            message.setText("This email has been automatically generated:\n" + messageBody + "Attention and Action Required 🚨\n" + messageBody
-		                    + "\nPP3V5 **scanner_3_nvmeShare** storage utilization has crossed 70% 🚫:\n" + messageBody);
-		            System.out.println("sending...");
-		            // Send message
-		            Transport.send(message);
-		            System.out.println("Sent message successfully....");
+	            message.setSubject("PP2V5.humanbrain.in - STORAGE ALERT ⚠️ ");
+	            // Set the actual message
+	            message.setText("This email has been automatically generated:\n" + messageBody + "Attention and Action Required 🚨\n" + messageBody
+	                    + "\nPP2V5 **nvmeShare** storage utilization has crossed 70% 🚫:\n" + messageBody);
+	            System.out.println("sending...");
+	            // Send message
+	            Transport.send(message);
+	            System.out.println("Sent message successfully....");
 		        } catch (MessagingException mex) {
 		            mex.printStackTrace();
 		        }
